@@ -1,12 +1,21 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import App from './App';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import BooksPage from './Pages/BooksPage';
+import Categories from './components/Categories/Categories';
+import './index.css';
 
 render(
   <React.StrictMode>
     <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <App />
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<BooksPage />} />
+          <Route path="/categories" element={<Categories />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root'),
