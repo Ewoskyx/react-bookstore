@@ -1,23 +1,19 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Math Magicians Project
+# Bookstore CMS Project
 
-> Evren Ersoy Bookstore project.
+> Evren Ersoy Bookstore CMS project.
 
-
+![screenshot](./BookstoreCMS.PNG) <br>
 
 Additional description of the project and its features.
 Microverse project series:
 
 ## Built With
 
-- HTML5 
-- SCSS
-- Javascript
-- Bootstrap 5
-- Webpack 5
-- API
 - React
+- Redux
+- Styled Components
 
 
 ## Live Demo
