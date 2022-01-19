@@ -1,23 +1,57 @@
-import React from 'react';
+import { React, useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
+import { useDispatch } from 'react-redux';
+import { addBook } from '../../redux/books/books';
+// import BookCategories from './BookCategories';
 import {
-  Wrapper, Heading, NewInput, CategorySelect, AddButton, Container,
+  Wrapper, Heading, NewInput, AddButton, Container, CategorySelect,
 } from './NewBookElements';
 
-const NewBook = () => (
-  <>
-    <Wrapper>
-      <Heading>ADD NEW BOOK</Heading>
-      <Container>
-        <NewInput value="" placeholder="Book title" />
-        <CategorySelect>
-          <option value="default">
-            Category
-          </option>
-        </CategorySelect>
-        <AddButton>ADD BOOK</AddButton>
-      </Container>
-    </Wrapper>
-  </>
-);
+const NewBook = () => {
+  const [bookData, setBookData] = useState({
+    title: '',
+    author: '',
+    category: '',
+  });
+  const dispatch = useDispatch();
+
+  const submitBookToStore = (e) => {
+    e.preventDefault();
+    const newBook = {
+      ...bookData,
+      id: uuidv4(),
+    };
+
+    dispatch(addBook(newBook));
+  };
+
+  const handleChange = (e) => {
+    setBookData({
+      ...bookData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  return (
+    <>
+      <Wrapper>
+        <Heading>ADD NEW BOOK</Heading>
+        <Container onSubmit={submitBookToStore}>
+          <NewInput type="text" name="title" placeholder="Book title" onChange={handleChange} required />
+          <NewInput type="text" name="author" placeholder="Book author" onChange={handleChange} required />
+          <CategorySelect name="category" onChange={handleChange} required>
+            <option value="" hidden>--- Select Category ---</option>
+            <option value="Action and Adventure">Action and Adventure</option>
+            <option value="Science Fiction (Sci-Fi)">Science Fiction (Sci-Fi)</option>
+            <option value="Biographies and Autobiographies">Biographies and Autobiographies</option>
+            <option value="Self-Help">Self-Help</option>
+            <option value="Fantasy">Fantasy</option>
+          </CategorySelect>
+          <AddButton type="submit">ADD BOOK</AddButton>
+        </Container>
+      </Wrapper>
+    </>
+  );
+};
 
 export default NewBook;

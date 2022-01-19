@@ -10,7 +10,7 @@ export const Nav = styled.nav`
  position:sticky;
  top:0;
  background-color: #ffffff;
-
+ z-index:10;
 `;
 
 export const NavContainer = styled.div`
@@ -19,7 +19,7 @@ justify-content:flex-start;
 height:80px;
 width:100%;
 padding: 0 24px;
-z-index:1;
+
 `;
 
 export const NavLogo = styled.h1`
