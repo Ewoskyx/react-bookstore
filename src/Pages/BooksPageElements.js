@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const PageSection = styled.section`
+export const PageSection = styled.section`
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -10,4 +10,8 @@ height: auto;
 gap: 12px;
 `;
 
-export default PageSection;
+export const Linespan = styled.span`
+border-bottom: 1px solid #dedede;
+width: 89%;
+margin-top: 24px;
+`;

@@ -5,6 +5,8 @@
 > Evren Ersoy Bookstore CMS project.
 
 ![screenshot](./BookstoreCMS.PNG) <br>
+![screenshot-2](./BookstoreCMS3.PNG) <br>
+![screenshot-3](./BookstoreCMS4.PNG) <br>
 
 Additional description of the project and its features.
 Microverse project series:
