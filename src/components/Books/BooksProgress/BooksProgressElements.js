@@ -14,20 +14,21 @@ export const CurrentChapter = styled.span`
     opacity: 0.5;
     font-family: font-family: "Roboto Slab", serif;
     letter-spacing: 0.4px;
-
+    color: #ffffff;
 `;
 
 export const Chapter = styled.span`
     font-size: 1rem;
     font-family: font-family: "Roboto Slab", serif;
     letter-spacing: 0.4px;
+    color: #ffffff;
 
 `;
 
 export const UpdateButton = styled.button`
   width: 50%;
   justify-self: flex-end;
-  background-color: #0290ff;
+  background:linear-gradient(#2196f3, #e91e63);
   color: #ffffff;
   font-size: 0.8rem;
   font-weight: 100;

@@ -1,3 +1,6 @@
-h1 {
+.category-header {
   text-align: center;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  color: #ccc;
+  transform: translate(0%, 100%);
 }
