@@ -9,6 +9,8 @@ export const Wrapper = styled.div`
   flex-direction: column;
 `;
 export const Heading = styled.h2`
+  font-family: 'Indie Flower', cursive;
+  color: #f0f;
   opacity: 0.7;
 `;
 export const Container = styled.form`
@@ -28,6 +30,7 @@ export const NewInput = styled.input`
   font-size:1rem;
   outline-color: #4386bf;
   border: 1px solid #dedede;
+  border-radius: 12px;
   `;
 export const CategorySelect = styled.select`
   width: 50%;
@@ -37,12 +40,18 @@ export const CategorySelect = styled.select`
   outline-color: #4386bf;
   opacity: 0.7;
   font-size: 1rem;
+  border-radius: 12px;
 `;
 export const AddButton = styled.button`
+font-family: 'Mochiy Pop P One', sans-serif;
   width: 30%;
   height: 100%;
-  background-color: #4386bf;
+  background:linear-gradient(#2196f3, #e91e63);
   color: #ffffff;
-  border: none;
+  border-radius: 12px;
   cursor: pointer;
+  transition: all 5s ease-out;
+  &:hover {
+    background:linear-gradient(#e91e63, #2196f3);
+  }
 `;

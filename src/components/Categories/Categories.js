@@ -3,7 +3,7 @@ import './Categories.css';
 
 const Categories = () => (
   <>
-    <h1>Under Construction...</h1>
+    <h1 className="category-header">Under Construction...</h1>
   </>
 );
 

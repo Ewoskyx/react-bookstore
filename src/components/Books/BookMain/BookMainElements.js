@@ -22,22 +22,15 @@ export const Category = styled.span`
   font-size: 1.1rem;
   font-weight: bold;
   opacity: 0.5;
-  color: #121212;
+  color: #fff;
 `;
 
 export const Title = styled.span`
-  font-family: "Roboto Slab", serif;
+  font-family: 'Indie Flower', cursive;
   font-size: 1.6rem;
   font-weight: bold;
   letter-spacing: 0.4px;
-`;
-
-export const Author = styled.span`
-  color: #4386bf;
-  font-family: "Roboto Slab", serif;
-  font-size: 1rem;
-  font-weight: normal;
-  letter-spacing: 0.4px;
+  color: #ffffff;
 `;
 
 export const BooksButton = styled.button`
@@ -45,7 +38,7 @@ export const BooksButton = styled.button`
   border: none;
   border-left: 1px solid #e8e8e8;
   background-color: transparent;
-  color: #4386bf;
+  color: #f0f;
   cursor: pointer;
   text-align: end;
 

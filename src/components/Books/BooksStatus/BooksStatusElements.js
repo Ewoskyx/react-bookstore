@@ -16,9 +16,9 @@ export const Gauage = styled.div`
   grid-area: gauage;
   width: 5rem;
   height: 5rem;
-  border: 6px solid #4386bf;
+  border: 6px solid #f0f;
   border-radius: 50%;
-  border-left-color: darkgray;
+  border-left-color: #991e63;
   transform: rotate(45deg);
   padding:12px;
 `;
@@ -27,6 +27,7 @@ export const PercentageSpan = styled.span`
   grid-area: percentage;
   padding:0 12px;
   font-size: 2rem;
+  color: #e91e63;
 `;
 
 export const StatusSpan = styled.span`
@@ -35,4 +36,5 @@ export const StatusSpan = styled.span`
   opacity: 0.5;
   font-size: 1rem;
   text-align:center;
+  color: #ffffff;
 `;
