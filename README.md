@@ -21,7 +21,7 @@ Microverse project series:
 ## Live Demo
 
 You can check the links below for the live demo.
-N/A
+https://ewos-bookstore.netlify.app/
 
 ## Getting Started
 
